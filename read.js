@@ -15,11 +15,6 @@ matches.forEach(function (v, k) {
     result[s[1]] = '+' + parseInt(s[2]);
 });
 
-var keys = Object.keys(result);
-keys.sort(function (a, b) {
-    return a.localeCompare(b);
-});
-console.log(keys);
-
-//console.log(result);
+console.log(result);
+fs.writeFileSync('unordered_area_code.json', JSON.stringify(result));
 
