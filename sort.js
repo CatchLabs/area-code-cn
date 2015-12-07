@@ -12,5 +12,5 @@ result = json2.map(function (v) {
     };
 });
 console.log(result);
-fs.writeFileSync('area_code.json', JSON.stringify(result));
+fs.writeFileSync('area_code.json', JSON.stringify(result, null, 4));
 
